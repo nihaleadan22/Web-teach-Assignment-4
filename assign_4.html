@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Markdown Slides</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Markdown Slides</h1>
+<div class="toolbar">
+<button id="newBtn">New</button>
+<button id="editBtn">Edit</button>
+<button id="saveBtn" title="Ctrl+S">Save</button>
+<button id="presentBtn" class="accent">Present</button>
+<span id="status"></span>
+</div>
+</header>
+
+<main>
+<section id="editorSection">
+<label for="editor">Markdown (use --- to start a new slide)</label>
+<textarea id="editor" spellcheck="false"></textarea>
+</section>
+
+<section id="viewer">
+<div id="slide"></div>
+<div id="controls">
+<button id="prevBtn" title="Left arrow">&larr; Left</button>
+<span id="counter">1 / 1</span>
+<button id="nextBtn" title="Right arrow">Right &rarr;</button>
+<button id="fsBtn" title="F11">&#x26F6; Full Screen</button>
+</div>
+</section>
+</main>
+<footer>Shortcuts: &larr; &rarr; change slide &middot; F11 full screen &middot; Ctrl+S save</footer>
+  <script src="web4.js"></script>
+</body>
+</html>
